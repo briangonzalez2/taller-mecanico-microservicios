@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  mysql-users:
+    image: mysql:8.0
+    container_name: mysql-users
+    restart: always
+    environment:
+      MYSQL_DATABASE: usersdb
+      MYSQL_USER: taller
+      MYSQL_PASSWORD: taller123
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "33061:3306"
+    volumes:
+      - mysql_users_data:/var/lib/mysql
+
+volumes:
+  mysql_users_data:
