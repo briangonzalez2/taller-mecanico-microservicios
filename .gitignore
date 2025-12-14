@@ -1,0 +1,68 @@
+# =========================
+# Java / Maven
+# =========================
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.log
+
+# =========================
+# Spring Boot
+# =========================
+application-local.properties
+application-local.yml
+.env
+
+# =========================
+# IDEs
+# =========================
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Docker
+# =========================
+**/docker-data/
+**/mysql-data/
+**/volumes/
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# Lombok
+# =========================
+lombok.config
+
+# =========================
+# Node / Frontend
+# =========================
+node_modules/
+dist/
+build/
+
+# =========================
+# Test coverage
+# =========================
+/coverage/
