@@ -1,0 +1,16 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: catalog-service
+
+  datasource:
+    url: jdbc:mysql://localhost:33063/catalogdb
+    username: taller
+    password: taller123
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

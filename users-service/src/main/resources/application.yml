@@ -6,7 +6,7 @@ spring:
     name: users-service
 
   datasource:
-    url: jdbc:mysql://localhost:33061/usersdb?useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/usersdb?useSSL=false&serverTimezone=UTC
     username: taller
     password: taller123
     driver-class-name: com.mysql.cj.jdbc.Driver
