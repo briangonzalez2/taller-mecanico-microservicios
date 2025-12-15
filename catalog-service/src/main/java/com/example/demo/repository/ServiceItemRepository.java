@@ -1,4 +1,7 @@
 package com.example.demo.repository;
 
-public interface ServiceItemRepository {
+import com.example.demo.model.ServiceItem;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ServiceItemRepository extends JpaRepository<ServiceItem, Long> {
 }

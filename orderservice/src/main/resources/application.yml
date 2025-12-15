@@ -1,24 +1,17 @@
+server:
+  port: 8083
+
 spring:
   application:
     name: orders-service
 
   datasource:
-    url: jdbc:mysql://localhost:3306/orders_db
-    username: root
-    password: ""
+    url: jdbc:mysql://localhost:33063/ordersdb?useSSL=false&serverTimezone=UTC
+    username: taller
+    password: taller123
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
-
-  cloud:
-    consul:
-      host: localhost
-      port: 8500
-      discovery:
-        enabled: true
-        register: true
-
-server:
-  port: 0
