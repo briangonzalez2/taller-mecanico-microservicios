@@ -11,9 +11,16 @@ services:
       MYSQL_PASSWORD: taller123
       MYSQL_ROOT_PASSWORD: root
     ports:
-      - "33061:3306"
+      - "3306:3306"
     volumes:
       - mysql_users_data:/var/lib/mysql
+
+  consul:
+    image: consul:1.15
+    container_name: consul
+    command: consul agent -dev -client=0.0.0.0
+    ports:
+      - "8500:8500"
 
 volumes:
   mysql_users_data:
